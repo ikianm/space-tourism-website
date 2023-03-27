@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style/main.css" />
+    <script src="scripts/main.js" defer></script>
+    <title>Space Tour</title>
+  </head>
+  <body>
+    <div id="parent">
+      <section id="home-section">
+        <header id="header">
+          <div id="logo">
+            <img src="assets/shared/logo.svg" alt="logo" />
+          </div>
+          <div id="hamburger-menu">
+            <img src="assets/shared/icon-hamburger.svg" alt="" />
+          </div>
+          <ul id="navigation-bar">
+            <li class="list-item">
+              <a href="#home-section" id="default-page">HOME</a>
+            </li>
+            <li class="list-item">
+              <a href="#destination-section">DESTINATION</a>
+            </li>
+            <li class="list-item"><a href="#crew-section">CREW</a></li>
+            <li class="list-item">
+              <a href="#tech-section">TECHNOLOGY</a>
+            </li>
+          </ul>
+        </header>
+        <div id="home-section__text">
+          <p>SO, YOU WANT TO TRAVELL TO</p>
+          <h1>SPACE</h1>
+          <p>
+            Let’s face it; if you want to go to space, you might as well
+            genuinely go to outer space and not hover kind of on the edge of it.
+            Well sit back, and relax because we’ll give you a truly out of this
+            world experience!
+          </p>
+        </div>
+        <button type="button">EXPLORE</button>
+      </section>
+
+      <section id="destination-section">
+        <h3>PICK YOUR DESTINATION</h3>
+        <div id="dest-text-wrapper">
+          <ul id="dest-nav">
+            <li id="1">MOON</li>
+            <li id="2">MARS</li>
+            <li id="3">EUROPA</li>
+            <li id="4">TITAN</li>
+          </ul>
+          <h2 id="dest-name">MOON</h2>
+          <p id="dest-desc">
+            See our planet as you’ve never seen it before. A perfect relaxing
+            trip away to help regain perspective and come back refreshed. While
+            you’re there, take in some history by visiting the Luna 2 and Apollo
+            11 landing sites.
+          </p>
+          <table>
+            <tr>
+              <th>AVG. DISTANCE</th>
+              <th>EST. TRAVEL TIME</th>
+            </tr>
+            <tr>
+              <td id="distance">384,400 km</td>
+              <td id="estimate">3 days</td>
+            </tr>
+          </table>
+        </div>
+        <div id="dest-img">
+          <img src="./assets/destination/image-moon.png" alt="planet image" />
+        </div>
+      </section>
+      <section id="crew-section">
+        <h3>MEET YOUR CREW</h3>
+        <div id="crew-text-wrapper">
+          <h4 id="crew-position">FLIGHT ENGINEER</h4>
+          <h2 id="crew-name">Anousheh Ansari</h2>
+          <p id="crew-desc">
+            Anousheh Ansari is an Iranian American engineer and co-founder of
+            Prodea Systems. Ansari was the fourth self-funded space tourist, the
+            first self-funded woman to fly to the ISS, and the first Iranian in
+            space.
+          </p>
+          <div id="dot-wrapper">
+            <span class="crew-dot" id="first-crew-dot"></span>
+            <span class="crew-dot" id="second-crew-dot"></span>
+            <span class="crew-dot" id="third-crew-dot"></span>
+            <span class="crew-dot" id="forth-crew-dot"></span>
+          </div>
+        </div>
+        <div id="crew-img">
+          <img src="assets/crew/image-anousheh-ansari.png" alt="crew image" />
+        </div>
+      </section>
+      <section id="tech-section">
+        <h3>SPACE LAUNCH 101</h3>
+        <div id="tech-dot-wrapper">
+          <span class="tech-dot">1</span>
+          <span class="tech-dot">2</span>
+          <span class="tech-dot">3</span>
+        </div>
+        <div id="tech-text-wrapper">
+          <h6>THE TERMINOLOGY</h6>
+          <h2 id="tech-name">LAUNCH VEHICLE</h2>
+          <p id="tech-desc">
+            A launch vehicle or carrier rocket is a rocket-propelled vehicle
+            used to carry a payload from Earth's surface to space, usually to
+            Earth orbit or beyond. Our WEB-X carrier rocket is the most powerful
+            in operation. Standing 150 metres tall, it's quite an awe-inspiring
+            sight on the launch pad!
+          </p>
+        </div>
+        <div id="tech-img">
+          <img
+            src="assets/technology/image-launch-vehicle-portrait.jpg"
+            alt="tech image"
+          />
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

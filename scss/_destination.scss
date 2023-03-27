@@ -1,0 +1,125 @@
+#destination-section {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background-image: url('../assets/destination/background-destination-tablet.jpg');
+  @include bg-adjustment;
+
+
+  h3 {
+    margin-top: 80px;
+    text-align: center;
+    letter-spacing: 5px;
+
+    &::before {
+      content: '01  ';
+      color: $text-color;
+      opacity: 0.7;
+    }
+  }
+
+  #dest-text-wrapper {
+    text-align: center;
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    #dest-name {
+      margin-top: 1rem;
+      margin-bottom: 1rem;
+      font-size: 75px;
+      font-weight: 400;
+    }
+
+    #dest-desc {
+      width: 80%;
+      border-bottom: 0.5px solid $text-color;
+      padding-bottom: 1rem;
+      margin-bottom: 1rem;
+    }
+
+    #dest-nav {
+      li {
+        display: inline;
+        margin: 0 1rem;
+        cursor: pointer;
+        @include android-fix;
+
+        &:hover {
+          padding-bottom: 5px;
+          border-bottom: 1px solid $text-color;
+        }
+      }
+    }
+  }
+
+  table th {
+    font-size: 10px;
+    padding: 0 5px;
+  }
+  #dest-img {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+
+    img {
+      width: 12rem;
+      height: 12rem;
+      object-fit: cover;
+    }
+  }
+}
+
+@include desktop-view {
+  #destination-section {
+    background-image: url('../assets/destination/background-destination-desktop.jpg');
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+
+    #dest-text-wrapper {
+      width: 25rem;
+      margin-right: 10rem;
+
+      #dest-desc {
+        line-height: 25px;
+      }
+
+      #dest-name {
+        font-size: 110px;
+      }
+    }
+
+    #dest-nav {
+      margin-top: 90px;
+      padding: 1rem 0;
+    }
+
+    h3 {
+      position: absolute;
+      top: 5rem;
+      left: 10rem;
+    }
+
+    #dest-img {
+      margin-left: 10rem;
+      margin-top: 10rem;
+
+      img {
+        width: 25rem;
+        height: 25rem;
+      }
+    }
+
+    table {
+      th {
+        font-size: 20px;
+      }
+      td {
+        font-size: 20px;
+      }
+    }
+  }
+}

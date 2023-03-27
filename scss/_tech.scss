@@ -1,0 +1,153 @@
+#tech-section {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  overflow: hidden;
+  background-image: url('../assets/technology/background-technology-mobile.jpg');
+  @include bg-adjustment;
+
+  #tech-text-wrapper {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    margin-top: 1rem;
+
+    #tech-name {
+      margin-bottom: 0.5rem;
+    }
+
+    #tech-desc {
+      width: 80%;
+      border-bottom: 0.5px solid $text-color;
+      padding-bottom: 0.5rem;
+    }
+  }
+
+  h3 {
+    text-align: center;
+    margin-top: 80px;
+    letter-spacing: 5px;
+    margin-bottom: 1rem;
+
+    &::before {
+      content: '03  ';
+      color: $text-color;
+      opacity: 0.7;
+    }
+  }
+
+  #tech-img {
+    text-align: center;
+
+    img {
+      width: 25rem;
+      height: 17.4rem;
+      object-fit: cover;
+    }
+  }
+
+  #tech-dot-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .tech-dot {
+      font-size: 20px;
+      border-radius: 50%;
+      padding: 0.5rem 1rem;
+      background-color: transparent;
+      border: 1px solid $text-color;
+      margin: 0 0.5rem;
+      cursor: pointer;
+      @include android-fix;
+
+      &:nth-child(1) {
+        background-color: #ffffffdb;
+        color: #0b0b0bed;
+      }
+    }
+  }
+}
+
+@include tablet-view {
+  #tech-section {
+    background-image: url('../assets/technology/background-technology-tablet.jpg');
+
+    h3 {
+      margin-top: 7rem;
+    }
+
+    #tech-desc {
+      margin-bottom: 1rem;
+      padding-bottom: 2rem;
+    }
+
+    #tech-img {
+      img {
+        width: 27rem;
+        height: 20rem;
+        object-fit: cover;
+      }
+    }
+  }
+}
+
+@include desktop-view {
+  #tech-section {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-image: url('../assets/technology/background-technology-desktop.jpg');
+
+    #tech-dot-wrapper {
+      position: absolute;
+      margin-left: 19rem;
+      margin-top: 32rem;
+
+      .tech-dot {
+        padding: 1rem 1.5rem;
+      }
+    }
+
+    h6 {
+      font-size: 20px;
+      letter-spacing: 2px;
+      font-weight: 300;
+    }
+
+    #tech-img {
+      img {
+        width: 27rem;
+        height: 27rem;
+        margin-top: 3rem;
+      }
+    }
+
+    #tech-text-wrapper {
+      width: 40rem;
+      margin-top: 10rem;
+      margin-left: 7rem;
+      text-align: center;
+    }
+
+    #tech-desc {
+      line-height: 25px;
+      font-size: 17px;
+      width: 30rem;
+      margin-left: -2rem;
+      padding-bottom: 3rem;
+    }
+
+    #tech-name {
+      font-size: 60px;
+    }
+  }
+
+  h3 {
+    position: absolute;
+    top: 5rem;
+    left: 10rem;
+  }
+}

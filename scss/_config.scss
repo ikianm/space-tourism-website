@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@300;400;500;600&display=swap');
+
+$text-color: #e7ecff;
+$font-family_1: 'Barlow', sans-serif;
+
+@mixin android-fix {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+@mixin bg-adjustment {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@mixin desktop-view {
+  @media screen and (min-width: 810px) {
+    @content;
+  }
+}
+
+@mixin tablet-view {
+  @media screen and (min-width: 505px) {
+    @content;
+  }
+}
